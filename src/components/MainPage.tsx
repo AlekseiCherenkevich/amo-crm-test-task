@@ -38,18 +38,15 @@ export const MainPage = () => {
     </SMainPage>
   )
 }
-
 const SMainPage = styled.div`
   display: flex;
   justify-content: space-between;
   background-color: coral;
 `
-
 const SMainPageMotto = styled.div`
   max-width: 275px;
   background-color: burlywood;
 `
-
 const SMainPageGifts = styled.div`
   max-width: 262px;
   background-color: lightgrey;

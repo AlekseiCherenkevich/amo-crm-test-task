@@ -27,7 +27,7 @@ export const Navbar = styled.nav`
     list-style: none;
   }
 `
-export const SHeader = styled.div`
+export const SHeader = styled.header`
   height: 73px;
   border: 1px solid darkviolet;
   background-color: moccasin;
