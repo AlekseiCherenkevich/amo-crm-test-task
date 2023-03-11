@@ -28,10 +28,14 @@ const PurpleBall = styled.div`
   box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
   filter: blur(5px);
   backdrop-filter: blur(2px);
+  @media (max-width: 1000px) {
+    right: 50px;
+    left: auto;
+  }
 `
 const RedBall = styled.div`
   position: absolute;
-  left: 519px;
+  right: 672px;
   top: 83px;
   background: radial-gradient(
     64% 64% at 27.25% 26.5%,
@@ -45,6 +49,10 @@ const RedBall = styled.div`
   border-radius: 50%;
   width: 83px;
   height: 83px;
+  @media (max-width: 880px) {
+    right: auto;
+    left: 100px;
+  }
 `
 const SmallRedBall = styled(RedBall)`
   top: 547px;
@@ -52,4 +60,8 @@ const SmallRedBall = styled(RedBall)`
   width: 28px;
   height: 28px;
   filter: blur(2.5px);
+  @media (max-width: 1000px) {
+    right: 100px;
+    left: auto;
+  }
 `
