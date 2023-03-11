@@ -26,6 +26,7 @@ const SApp = styled.div`
   height: 100vh;
 `
 const Container = styled.div`
+  padding-top: 46px;
   position: relative;
   margin: 0 auto;
   width: 100%;
