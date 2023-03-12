@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 
 export const SContainerWrapper = styled.div`
@@ -25,7 +26,7 @@ export const SContainer = styled.div`
   }
 `
 
-export const SLogo = styled.div`
+export const SLogo = styled(NavLink)`
   width: 160px;
   background-color: black;
   @media (max-width: 830px) {
@@ -34,7 +35,6 @@ export const SLogo = styled.div`
 `
 
 export const SLogoDescr = styled.p`
-  border: 1px solid darkmagenta;
   font-family: 'Montserrat-Light', sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -99,6 +99,21 @@ export const SHeaderLink = styled.a`
     text-transform: uppercase;
   }
 `
+
+export const SNavlink = styled(NavLink)`
+  font-family: 'Inter-Medium', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #e4e5ea;
+  text-decoration: none;
+  @media (max-width: 405px) {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+`
+
 export const SPhone = styled(SHeaderLink)`
   @media (max-width: 670px) {
     display: none;

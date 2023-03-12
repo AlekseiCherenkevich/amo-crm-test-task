@@ -1,16 +1,15 @@
 import React from 'react'
 
-import { SHeaderLink, SNavbar } from '../../../styles'
-
+import { SHeaderLink, SNavbar, SNavlink } from '../../../styles'
 export const Navbar = () => {
   return (
     <SNavbar>
       <ul>
         <li>
-          <SHeaderLink href="#">Услуги</SHeaderLink>
+          <SNavlink to={'/*'}>Услуги</SNavlink>
         </li>
         <li>
-          <SHeaderLink href="#">Виджеты</SHeaderLink>
+          <SNavlink to={'/time'}>Виджеты</SNavlink>
         </li>
         <li>
           <SHeaderLink href="#">Интеграции</SHeaderLink>
