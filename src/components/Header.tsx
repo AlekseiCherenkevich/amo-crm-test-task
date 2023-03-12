@@ -14,6 +14,7 @@ export const Header = () => {
       <SLogo>
         <img src={logo} alt="logo" />
         <img src={logoTitle} alt={'welbex'} />
+        <SLogoDescr>крупный интегратор CRM в России и еще 8 странах</SLogoDescr>
       </SLogo>
       <Navbar>
         <ul>
@@ -44,16 +45,29 @@ export const Header = () => {
   )
 }
 export const SLogo = styled.div`
+  width: 160px;
   background-color: black;
   @media (max-width: 820px) {
     display: none;
   }
 `
 
+export const SLogoDescr = styled.p`
+  //background-color: darkmagenta;
+  border: 1px solid darkmagenta;
+  font-family: 'Montserrat-Light', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 12px;
+  color: #e4e5ea;
+`
+
 export const SContacts = styled.div`
   display: flex;
   justify-content: space-between;
-  background-color: red;
+  //background-color: red;
+  border: 1px solid red;
   width: 116px;
   @media (max-width: 970px) {
     display: none;
@@ -77,8 +91,8 @@ export const Navbar = styled.nav`
 
 export const SHeader = styled.header`
   height: 73px;
-  border: 1px solid darkviolet;
-  background-color: midnightblue;
+  //background-color: midnightblue;
+  border: 1px solid midnightblue;
   display: flex;
   align-items: center;
   justify-content: space-between;
