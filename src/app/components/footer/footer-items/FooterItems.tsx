@@ -2,9 +2,8 @@ import React from 'react'
 
 import { SFooterItemsWrapper, SFooterLink, SFooterLinksList, SFooterTitle } from '../../../styles'
 
+import { data } from './data'
 import { FooterContacts } from './footer-contacts'
-
-import { data } from '.'
 
 const footerItems = data.map((i, index) => (
   <div key={index}>

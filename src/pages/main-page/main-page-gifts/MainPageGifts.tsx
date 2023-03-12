@@ -29,9 +29,7 @@ export const MainPageGifts = () => {
         {gifts.map((g, index) => (
           <SMainPageGiftsItem key={index}>
             <SMainPageGiftTitle>{g.title}</SMainPageGiftTitle>
-            <SMainPageDescriptionText lineHeight={'20px'} fontSize={'16px'} textAlign={'right'}>
-              {g.description}
-            </SMainPageDescriptionText>
+            <SMainPageDescriptionText>{g.description}</SMainPageDescriptionText>
           </SMainPageGiftsItem>
         ))}
       </SMainPageGiftsItemsWrapper>

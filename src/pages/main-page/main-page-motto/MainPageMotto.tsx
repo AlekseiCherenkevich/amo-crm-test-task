@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { SColoredText, SMainPageDescriptionText, SMainPageMotto } from '../styles'
+import { SColoredText, SMainPageMotto, SMainPageMottoDescriptionText } from '../styles'
 
 export const MainPageMotto = () => {
   return (
@@ -8,9 +8,9 @@ export const MainPageMotto = () => {
       <h1>
         Зарабатывайте больше <SColoredText font={'Inter-Black'}>с WELBEX</SColoredText>
       </h1>
-      <SMainPageDescriptionText width={'340px'} fontSize={'18px'} lineHeight={'22px'}>
+      <SMainPageMottoDescriptionText>
         Развиваем и контролируем продажи за вас
-      </SMainPageDescriptionText>
+      </SMainPageMottoDescriptionText>
     </SMainPageMotto>
   )
 }

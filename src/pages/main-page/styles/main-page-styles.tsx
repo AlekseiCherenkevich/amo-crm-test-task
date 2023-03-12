@@ -8,12 +8,13 @@ export const SMainPageGiftsItem = styled.div`
 
 export const SMainPageMotto = styled.div`
   max-width: 362px;
+  width: 100%;
   //background-color: mediumvioletred;
   border: 1px solid mediumvioletred;
-  height: 248px;
+  min-height: 248px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   h1 {
     font-family: 'Inter-Regular', sans-serif;
     font-style: normal;
@@ -21,23 +22,32 @@ export const SMainPageMotto = styled.div`
     font-size: 48px;
     line-height: 58px;
     color: #e4e5ea;
+    @media (max-width: 380px) {
+      font-size: 40px;
+    }
+    @media (max-width: 330px) {
+      font-size: 36px;
+    }
   }
 `
-export const SMainPageDescriptionText = styled.p<{
-  width?: string
-  fontSize: string
-  lineHeight: string
-  textAlign?: string
-}>`
-  width: ${props => props.width};
+
+export const SMainPageDescriptionText = styled.p`
   font-family: 'Montserrat-Regular', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: ${props => props.fontSize};
-  line-height: ${props => props.lineHeight};
-  text-align: ${props => props.textAlign};
+  font-size: 16px;
+  line-height: 20px;
+  text-align: right;
   color: #e4e5ea;
 `
+
+export const SMainPageMottoDescriptionText = styled(SMainPageDescriptionText)`
+  font-size: 18px;
+  line-height: 22px;
+  width: 340px;
+  text-align: left;
+`
+
 export const SMainPageGiftsItemsWrapper = styled.div`
   //background-color: mediumvioletred;
   border: 1px solid mediumvioletred;
@@ -56,9 +66,9 @@ export const SMainPage = styled.div`
   justify-content: space-between;
   //background-color: coral;
   border: 1px solid coral;
-  @media (max-width: 670px) {
-    //background-color: navajowhite;
-    border: 1px solid navajowhite;
+  flex-wrap: wrap;
+  @media (max-width: 870px) {
+    padding-top: 40px;
   }
 `
 

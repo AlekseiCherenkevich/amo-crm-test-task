@@ -6,26 +6,31 @@ export const SContainerWrapper = styled.div`
 
 export const SApp = styled.div`
   position: relative;
-  background-color: #0e1014;
   width: 100%;
-  height: 100vh;
+  //min-height: 100vh;
   z-index: -100;
 `
+
 export const SContainer = styled.div`
   padding-top: 46px;
   position: relative;
   margin: 0 auto;
   width: 100%;
-  height: 100vh;
+  //height: 100vh;
+  min-height: 100vh;
   max-width: 1140px;
   //background-color: lightgrey;
   border: 1px solid lightgrey;
+  @media (max-width: 870px) {
+    height: fit-content;
+    padding-top: 0;
+  }
 `
 
 export const SLogo = styled.div`
   width: 160px;
   background-color: black;
-  @media (max-width: 820px) {
+  @media (max-width: 830px) {
     display: none;
   }
 `
@@ -66,7 +71,6 @@ export const SNavbar = styled.nav`
     }
   }
 `
-
 export const SHeader = styled.header`
   height: 73px;
   //background-color: midnightblue;
@@ -78,6 +82,9 @@ export const SHeader = styled.header`
   & nav {
     //background-color: red;
   }
+  @media (max-width: 870px) {
+    height: 55px;
+  }
 `
 
 export const SHeaderLink = styled.a`
@@ -88,8 +95,10 @@ export const SHeaderLink = styled.a`
   line-height: 19px;
   color: #e4e5ea;
   text-decoration: none;
+  @media (max-width: 405px) {
+    font-size: 12px;
+  }
 `
-
 export const SPhone = styled(SHeaderLink)`
   @media (max-width: 670px) {
     display: none;
@@ -165,11 +174,19 @@ export const SFooterLinksList = styled.ul`
     margin-right: 52px;
     margin-top: 10px;
   }
+  @media (max-width: 430px) {
+    margin-right: 0;
+    max-height: fit-content;
+
+    li {
+      margin-right: 0;
+    }
+  }
 `
 export const SFooterItemsWrapper = styled.div`
   position: relative;
   display: flex;
-  height: 172px;
+  min-height: 172px;
   & div:last-child {
     position: absolute;
     right: 0;
@@ -177,7 +194,7 @@ export const SFooterItemsWrapper = styled.div`
     border: 1px solid coral;
   }
 
-  @media (max-width: 870px) {
+  @media (max-width: 1020px) {
     flex-direction: column;
 
     & div:last-child {
@@ -191,4 +208,7 @@ export const SFooter = styled.footer`
   bottom: 0;
   //background-color: coral;
   border: 1px solid coral;
+  @media (max-width: 1020px) {
+    position: relative;
+  }
 `
