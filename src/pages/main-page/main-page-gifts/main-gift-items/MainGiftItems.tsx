@@ -16,14 +16,14 @@ export const MainGiftItems = () => {
 
   return (
     <SMainPageGiftsItemsWrapper>
-      {width > 370 &&
+      {width > 380 &&
         gifts.map((g, index) => (
           <SMainPageGiftsItem key={index}>
             <SMainPageGiftTitle>{g.title}</SMainPageGiftTitle>
             <SMainPageDescriptionText>{g.description}</SMainPageDescriptionText>
           </SMainPageGiftsItem>
         ))}
-      {width <= 370 &&
+      {width <= 380 &&
         mediaGifts.map((g, index) => (
           <SMainPageGiftsItem key={index}>
             <SMainPageGiftTitle>{g.title}</SMainPageGiftTitle>

@@ -8,6 +8,7 @@ export const Spheres = () => {
       <PurpleBall></PurpleBall>
       <RedBall></RedBall>
       <SmallRedBall></SmallRedBall>
+      <BigBall></BigBall>
     </>
   )
 }
@@ -67,4 +68,16 @@ const SmallRedBall = styled(RedBall)`
     left: auto;
   }
   z-index: -10;
+`
+
+const BigBall = styled.div`
+  position: absolute;
+  right: 80%;
+  top: 251px;
+  width: 311px;
+  height: 311px;
+  border-radius: 50%;
+  background: #961a1a;
+  opacity: 0.5;
+  filter: blur(196px);
 `

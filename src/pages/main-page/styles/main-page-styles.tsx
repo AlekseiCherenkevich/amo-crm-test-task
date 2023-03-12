@@ -1,19 +1,31 @@
 import styled from 'styled-components'
 
 export const SMainPageGiftsItem = styled.div`
+  position: relative;
   height: 68px;
-  width: 137px;
-  border: 1px solid burlywood;
+  width: 145px;
   @media (max-width: 380px) {
-    height: fit-content;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    h3 {
+      margin-left: 20px;
+    }
+    &:before {
+      content: '';
+      width: 15px;
+      height: 3px;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+      background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%), #e4e5ea;
+    }
   }
 `
-
 export const SMainPageMotto = styled.div`
   max-width: 362px;
   width: 100%;
-  //background-color: mediumvioletred;
-  border: 1px solid mediumvioletred;
   min-height: 248px;
   display: flex;
   flex-direction: column;
@@ -59,8 +71,6 @@ export const SMainPageMottoDescriptionText = styled(SMainPageDescriptionText)`
 `
 
 export const SMainPageGiftsItemsWrapper = styled.div`
-  //background-color: mediumvioletred;
-  border: 1px solid mediumvioletred;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -69,7 +79,7 @@ export const SMainPageGiftsItemsWrapper = styled.div`
   height: 267px;
   padding: 40px 0 61px 0;
   @media (max-width: 380px) {
-    height: 50px;
+    height: 70px;
     padding: 0;
     margin-top: 20px;
     margin-bottom: 59px;
@@ -79,8 +89,6 @@ export const SMainPage = styled.div`
   padding-top: 84px;
   display: flex;
   justify-content: space-between;
-  //background-color: coral;
-  border: 1px solid coral;
   flex-wrap: wrap;
   @media (max-width: 870px) {
     padding-top: 40px;
@@ -91,7 +99,7 @@ export const SMainPageGifts = styled.div`
   position: relative;
   max-width: 291px;
   height: 372px;
-  //border: 1px solid lightgrey;
+  margin-bottom: 20px;
   @media (max-width: 380px) {
     margin-top: 45px;
     height: fit-content;
@@ -105,30 +113,26 @@ export const SMainPageGiftsTitle = styled.h3`
   line-height: 22px;
   text-align: right;
   color: #e4e5ea;
-  //background-color: burlywood;
 `
 
 export const SMainPageGiftTitle = styled(SMainPageGiftsTitle)`
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  @media (max-width: 370px) {
+  @media (max-width: 380px) {
     font-size: 13px;
   }
 `
 export const SColoredText = styled.span<{ font: 'Inter-Black' | 'Inter-Medium' }>`
-  //font-family: Inter-Black;
   font-family: ${props => props.font};
   background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%), #e4e5ea;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 `
-
 export const Button = styled.button`
   position: absolute;
   right: 0;
   width: 262px;
   height: 61px;
-  background-color: #4077f3;
   font-family: 'Inter-Medium', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -138,6 +142,7 @@ export const Button = styled.button`
   color: #e4e5ea;
   border: navajowhite;
   cursor: pointer;
+  background-color: #4077f3;
   @media (max-width: 380px) {
     display: none;
   }

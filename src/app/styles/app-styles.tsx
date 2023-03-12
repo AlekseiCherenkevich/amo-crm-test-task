@@ -19,8 +19,6 @@ export const SContainer = styled.div`
   //height: 100vh;
   min-height: 100vh;
   max-width: 1140px;
-  //background-color: lightgrey;
-  border: 1px solid lightgrey;
   @media (max-width: 870px) {
     height: fit-content;
     padding-top: 0;
@@ -36,7 +34,6 @@ export const SLogo = styled.div`
 `
 
 export const SLogoDescr = styled.p`
-  //background-color: darkmagenta;
   border: 1px solid darkmagenta;
   font-family: 'Montserrat-Light', sans-serif;
   font-style: normal;
@@ -49,8 +46,6 @@ export const SLogoDescr = styled.p`
 export const SContacts = styled.div`
   display: flex;
   justify-content: space-between;
-  //background-color: red;
-  border: 1px solid red;
   width: 116px;
   @media (max-width: 970px) {
     display: none;
@@ -77,8 +72,6 @@ export const SNavbar = styled.nav`
 `
 export const SHeader = styled.header`
   height: 73px;
-  //background-color: midnightblue;
-  border: 1px solid midnightblue;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -88,6 +81,9 @@ export const SHeader = styled.header`
   }
   @media (max-width: 870px) {
     height: 55px;
+  }
+  @media (max-width: 430px) {
+    background-color: #0e1014;
   }
 `
 export const SHeaderLink = styled.a`
@@ -113,8 +109,6 @@ export const SFooterContacts = styled.div`
   width: 76px;
   display: flex;
   justify-content: space-between;
-  //background-color: mediumvioletred;
-  border: 1px solid mediumvioletred;
   @media (max-width: 430px) {
     margin: 22px 0 12px 0;
   }
@@ -136,11 +130,6 @@ export const SFooterLink = styled.a`
 export const SFooterContact = styled(SFooterLink)`
   display: block;
   margin-top: 10px;
-  background-color: blueviolet;
-  border: 1px solid blueviolet;
-  @media (max-width: 430px) {
-    background-color: coral;
-  }
 `
 
 export const SFooterConfidentiality = styled.div`
@@ -151,7 +140,7 @@ export const SFooterConfidentiality = styled.div`
   align-items: flex-end;
   flex-direction: column;
   //background-color: blueviolet;
-  border: 1px solid blueviolet;
+  //border: 1px solid blueviolet;
   p,
   a {
     font-family: 'Montserrat-Regular', sans-serif;
@@ -174,8 +163,8 @@ export const SFooterTitle = styled.h4`
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #656566;
-  @media (max-width: 430px) {
-    background-color: blue;
+  @media (max-width: 1020px) {
+    //background-color: blue;
     margin-top: 30px;
   }
 `
@@ -188,15 +177,13 @@ export const SFooterLinksList = styled.ul`
   list-style-type: none;
   margin-right: 46px;
   & li {
-    background-color: coral;
-    border: 1px solid coral;
     margin-right: 52px;
     margin-top: 10px;
   }
   @media (max-width: 430px) {
     margin-right: 0;
     max-height: 265px;
-    background-color: mediumvioletred;
+    //background-color: mediumvioletred;
     & li {
       margin-right: 0;
       height: 37px;
@@ -211,8 +198,6 @@ export const SFooterItemsWrapper = styled.div`
   & div:last-child {
     position: absolute;
     right: 0;
-    //background-color: coral;
-    border: 1px solid coral;
   }
 
   @media (max-width: 1020px) {
@@ -224,11 +209,9 @@ export const SFooterItemsWrapper = styled.div`
   }
 `
 export const SFooter = styled.footer`
-  position: absolute;
+  position: relative;
   width: 100%;
   bottom: 0;
-  //background-color: coral;
-  border: 1px solid coral;
   @media (max-width: 1020px) {
     position: relative;
   }
