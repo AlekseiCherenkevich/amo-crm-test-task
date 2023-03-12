@@ -32,6 +32,7 @@ const PurpleBall = styled.div`
     right: 50px;
     left: auto;
   }
+  z-index: -10;
 `
 const RedBall = styled.div`
   position: absolute;
@@ -53,6 +54,7 @@ const RedBall = styled.div`
     right: auto;
     left: 100px;
   }
+  z-index: -10;
 `
 const SmallRedBall = styled(RedBall)`
   top: 547px;
@@ -64,4 +66,5 @@ const SmallRedBall = styled(RedBall)`
     right: 100px;
     left: auto;
   }
+  z-index: -10;
 `

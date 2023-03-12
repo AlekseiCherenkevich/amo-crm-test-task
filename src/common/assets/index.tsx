@@ -1,0 +1,5 @@
+export const phone = require('./phone.png')
+export const telegram = require('./telegram.png')
+export const logoTitle = require('./Vector-Title.png')
+export const logo = require('./Vector.png')
+export const viber = require('./viber.png')
