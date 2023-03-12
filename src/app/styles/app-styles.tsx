@@ -8,7 +8,7 @@ export const SApp = styled.div`
   position: relative;
   width: 100%;
   //min-height: 100vh;
-  z-index: -100;
+  z-index: 1;
 `
 
 export const SContainer = styled.div`
