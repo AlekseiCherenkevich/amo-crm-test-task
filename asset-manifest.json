@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/amo-crm-test-task/static/css/main.9888e490.css",
+    "main.js": "/amo-crm-test-task/static/js/main.d7f6ce69.js",
+    "static/media/Inter-Black.ttf": "/amo-crm-test-task/static/media/Inter-Black.143c28420846d45c5834.ttf",
+    "static/media/Inter-Bold.ttf": "/amo-crm-test-task/static/media/Inter-Bold.88fa7ae373b07b41ecce.ttf",
+    "static/media/Inter-Medium.ttf": "/amo-crm-test-task/static/media/Inter-Medium.6dcbc9bed1ec438907ee.ttf",
+    "static/media/Inter-Regular.ttf": "/amo-crm-test-task/static/media/Inter-Regular.e89cb19905e7db5591b0.ttf",
+    "static/media/Montserrat-Light.ttf": "/amo-crm-test-task/static/media/Montserrat-Light.6fcc9263a21be961d246.ttf",
+    "static/media/Montserrat-Regular.ttf": "/amo-crm-test-task/static/media/Montserrat-Regular.ceb11275ab638627a643.ttf",
+    "index.html": "/amo-crm-test-task/index.html",
+    "main.9888e490.css.map": "/amo-crm-test-task/static/css/main.9888e490.css.map",
+    "main.d7f6ce69.js.map": "/amo-crm-test-task/static/js/main.d7f6ce69.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9888e490.css",
+    "static/js/main.d7f6ce69.js"
+  ]
+}
