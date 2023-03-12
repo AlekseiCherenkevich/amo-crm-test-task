@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const SContainerWrapper = styled.div`
-  padding: 0 10px 0 10px;
+  padding: 0 14px 0 14px;
 `
 
 export const SApp = styled.div`
@@ -63,11 +63,15 @@ export const SNavbar = styled.nav`
     width: 503px;
     list-style: none;
   }
-
   @media (max-width: 670px) {
     width: 100%;
     & ul {
       width: 100%;
+    }
+  }
+  @media (max-width: 500px) {
+    & ul li:last-child {
+      display: none;
     }
   }
 `
@@ -86,7 +90,6 @@ export const SHeader = styled.header`
     height: 55px;
   }
 `
-
 export const SHeaderLink = styled.a`
   font-family: 'Inter-Medium', sans-serif;
   font-style: normal;
@@ -97,6 +100,7 @@ export const SHeaderLink = styled.a`
   text-decoration: none;
   @media (max-width: 405px) {
     font-size: 12px;
+    text-transform: uppercase;
   }
 `
 export const SPhone = styled(SHeaderLink)`
@@ -104,7 +108,6 @@ export const SPhone = styled(SHeaderLink)`
     display: none;
   }
 `
-
 export const SFooterContacts = styled.div`
   margin: 22px 0 22px 0;
   width: 76px;
@@ -112,6 +115,9 @@ export const SFooterContacts = styled.div`
   justify-content: space-between;
   //background-color: mediumvioletred;
   border: 1px solid mediumvioletred;
+  @media (max-width: 430px) {
+    margin: 22px 0 12px 0;
+  }
 `
 
 export const SFooterLink = styled.a`
@@ -122,13 +128,19 @@ export const SFooterLink = styled.a`
   line-height: 19px;
   color: #e4e5ea;
   text-decoration: none;
+  @media (max-width: 380px) {
+    font-size: 13px;
+  }
 `
 
 export const SFooterContact = styled(SFooterLink)`
   display: block;
   margin-top: 10px;
-  //background-color: blueviolet;
+  background-color: blueviolet;
   border: 1px solid blueviolet;
+  @media (max-width: 430px) {
+    background-color: coral;
+  }
 `
 
 export const SFooterConfidentiality = styled.div`
@@ -150,6 +162,9 @@ export const SFooterConfidentiality = styled.div`
     text-align: right;
     color: #e4e5ea;
   }
+  @media (max-width: 430px) {
+    margin-top: 50px;
+  }
 `
 export const SFooterTitle = styled.h4`
   font-family: Inter-Regular, sans-serif;
@@ -159,6 +174,10 @@ export const SFooterTitle = styled.h4`
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #656566;
+  @media (max-width: 430px) {
+    background-color: blue;
+    margin-top: 30px;
+  }
 `
 
 export const SFooterLinksList = styled.ul`
@@ -169,17 +188,19 @@ export const SFooterLinksList = styled.ul`
   list-style-type: none;
   margin-right: 46px;
   & li {
-    //background-color: coral;
+    background-color: coral;
     border: 1px solid coral;
     margin-right: 52px;
     margin-top: 10px;
   }
   @media (max-width: 430px) {
     margin-right: 0;
-    max-height: fit-content;
-
-    li {
+    max-height: 265px;
+    background-color: mediumvioletred;
+    & li {
       margin-right: 0;
+      height: 37px;
+      width: 145px;
     }
   }
 `

@@ -1,13 +1,18 @@
 import React from 'react'
 
-import { SColoredText, SMainPageMotto, SMainPageMottoDescriptionText } from '../styles'
+import {
+  SColoredText,
+  SMainPageMotto,
+  SMainPageMottoDescriptionText,
+  SMainPageMottoTitle,
+} from '../styles'
 
 export const MainPageMotto = () => {
   return (
     <SMainPageMotto>
-      <h1>
+      <SMainPageMottoTitle>
         Зарабатывайте больше <SColoredText font={'Inter-Black'}>с WELBEX</SColoredText>
-      </h1>
+      </SMainPageMottoTitle>
       <SMainPageMottoDescriptionText>
         Развиваем и контролируем продажи за вас
       </SMainPageMottoDescriptionText>
